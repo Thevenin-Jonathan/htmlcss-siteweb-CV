@@ -69,7 +69,7 @@ img {
 .grid-container {
   display: grid;
   min-height: 100vh;
-  grid: "picture header" auto "aside main" 1fr "footer footer" auto / 350px auto; }
+  grid: "picture header" auto "aside main" 1fr "footer footer" auto / 300px auto; }
   @media (max-width: 480px) {
     .grid-container {
       grid: "header" auto "main" auto "picture" auto "aside" auto "footer" auto / auto; } }
@@ -242,9 +242,6 @@ footer {
   @media (min-width: 481px) and (max-width: 767px) {
     footer {
       padding: 4rem 1rem; } }
-  @media (min-width: 768px) and (max-width: 979px) {
-    footer {
-      padding: 4rem 3rem; } }
   footer h2 {
     margin-bottom: 3rem; }
     @media (max-width: 480px) {
@@ -294,9 +291,9 @@ footer {
           min-width: 200px; } }
       @media (min-width: 481px) and (max-width: 767px) {
         footer form input {
-          min-width: 300px; } }
+          min-width: 250px; } }
       @media (min-width: 768px) and (max-width: 979px) {
         footer form input {
-          min-width: 350px; } }
+          min-width: 250px; } }
       footer form input::placeholder {
         color: var(--text); }

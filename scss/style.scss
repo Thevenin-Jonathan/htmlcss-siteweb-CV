@@ -12,7 +12,7 @@
     "picture header" auto
     "aside main" 1fr
     "footer footer" auto
-    / 350px auto;
+    / 300px auto;
   @include xs {
     grid:
       "header" auto
@@ -228,9 +228,6 @@ footer {
   @include sm {
     padding: 4rem 1rem;
   }
-  @include md {
-    padding: 4rem 3rem;
-  }
   h2 {
     margin-bottom: 3rem;
     @include xs {
@@ -284,10 +281,10 @@ footer {
         min-width: 200px;
       }
       @include sm {
-        min-width: 300px;
+        min-width: 250px;
       }
       @include md {
-        min-width: 350px;
+        min-width: 250px;
       }
       &::placeholder {
         color: var(--text);
