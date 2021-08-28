@@ -22,6 +22,15 @@
       "footer" auto
       / auto;
   }
+  @include sm {
+    grid:
+      "header" auto
+      "main" auto
+      "picture" auto
+      "aside" auto
+      "footer" auto
+      / auto;
+  }
 }
 
 header {
@@ -47,6 +56,16 @@ header {
       line-height: 4rem;
       font-weight: 400;
     }
+    @include sm {
+      font-size: 4rem;
+      line-height: 5rem;
+      font-weight: 400;
+    }
+    @include md {
+      font-size: 5rem;
+      line-height: 6rem;
+      font-weight: 400;
+    }
   }
   p {
     font-size: 2rem;
@@ -64,6 +83,7 @@ header {
   background: var(--background);
   border-right: 1px solid var(--border);
   filter: grayscale(1);
+  text-align: center;
   img {
     border-radius: 50%;
   }
@@ -152,6 +172,10 @@ main {
     padding: 5rem 2rem;
     padding-bottom: 1rem;
   }
+  @include sm {
+    padding: 5rem 2rem;
+    padding-bottom: 1rem;
+  }
   h2 {
     margin-bottom: 4rem;
   }
@@ -201,9 +225,18 @@ footer {
   @include xs {
     padding: 4rem 1rem;
   }
+  @include sm {
+    padding: 4rem 1rem;
+  }
+  @include md {
+    padding: 4rem 3rem;
+  }
   h2 {
     margin-bottom: 3rem;
     @include xs {
+      padding: 0 3rem;
+    }
+    @include sm {
       padding: 0 3rem;
     }
   }
@@ -249,6 +282,12 @@ footer {
       padding: 1rem 2rem;
       @include xs {
         min-width: 200px;
+      }
+      @include sm {
+        min-width: 300px;
+      }
+      @include md {
+        min-width: 350px;
       }
       &::placeholder {
         color: var(--text);
